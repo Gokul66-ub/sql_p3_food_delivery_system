@@ -27,7 +27,7 @@ It demonstrates a comprehensive approach to **database design**, **data generati
 | **Version Control** | Git & GitHub |
 
 ---
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4a9ec27f-cf88-4945-af32-df920e93a813" />
+<img width="800" height="500" alt="image" src="https://github.com/Gokul66-ub/sql_p3_food_delivery_system/blob/main/Gemini_Generated_Image_u70ketu70ketu70k.png" />
 
 ## 🧱 Database Schema (ER Diagram)
 
