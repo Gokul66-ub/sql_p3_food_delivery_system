@@ -27,7 +27,7 @@ It demonstrates a comprehensive approach to **database design**, **data generati
 | **Version Control** | Git & GitHub |
 
 ---
-
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/4a9ec27f-cf88-4945-af32-df920e93a813" />
 ## 🧱 Database Schema (ER Diagram)
 
 The system is built on a **normalized relational database model** designed to ensure data integrity and query efficiency.  
