@@ -34,3 +34,4 @@ It demonstrates a comprehensive approach to **database design**, **data generati
 The system is built on a **normalized relational database model** designed to ensure data integrity and query efficiency.  
 It comprises **five core tables** that interact to capture the entire order lifecycle.
 
+<img src="./er_diagram.png" alt="Entity-Relationship Diagram" width="800">
