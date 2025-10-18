@@ -36,6 +36,9 @@ It comprises **five core tables** that interact to capture the entire order life
 
 <img src="./er diagram.png" alt="Entity-Relationship Diagram" width="800">
 
+- **Database Creation**: Created a database named `zomato_db`.
+- **Table Creation**: Created tables for customers,deliveries,orders,restaurants and riders. Each table includes relevant columns and relationships.
+
 ```sql
 CREATE DATABASE zomato_db;
 
@@ -354,11 +357,27 @@ USING(order_id)
 GROUP BY 1,2
 ORDER BY 1,2
 ```
-**14.Write a query to find the number of 5 star,4 star and 3 star raings each riders has.
-    Riders receive this rating based on delivery time
-    If orders are delivered less than 15 minutes of order recived time the rider gets 5 star rating
-    IF they delivered 15 and 20 minut they get 4 star rating
-    If they delivered after 20 minute they get 3 star rating**
+## 14. ⭐ Rider Rating Analysis by Delivery Time
+
+This task involves calculating the **number of 5-star, 4-star, and 3-star ratings** each rider has received, based on their **delivery time performance**.
+
+---
+
+### 🎯 Objective
+
+Write a SQL query to determine, for each **rider**, how many **5-star**, **4-star**, and **3-star** ratings they have earned.
+
+---
+
+### 🧩 Rating Rules
+
+| Delivery Time (Minutes) | Rating | Description |
+|--------------------------|---------|--------------|
+| `< 15`                  | ⭐⭐⭐⭐⭐  | Excellent (Fast delivery) |
+| `15 - 20`               | ⭐⭐⭐⭐   | Good (On-time delivery) |
+| `> 20`                  | ⭐⭐⭐    | Average (Late delivery) |
+
+---
 ```sql
 WITH time_taken_riders AS (
 SELECT 
@@ -522,3 +541,33 @@ USING(restaurant_id)
 WHERE order_date BETWEEN '2024-01-01' AND '2024-12-31'
 GROUP BY city
 ```
+## 🔹 Overall Reports & Analysis  
+
+- 🍽️ **Restaurant Reports** – Revenue ranking, growth rate, order completion, and top-performing restaurants per city  
+- 👥 **Customer Reports** – Total spending, segmentation (Gold/Silver tiers), loyalty analysis, and top order contributors  
+- 🛵 **Rider Reports** – Delivery time efficiency, earnings, and star rating performance based on delivery speed  
+- 📦 **Order Reports** – Cancellations, delivery status, time slot analysis, and monthly order frequency trends  
+- 🌆 **City Reports** – Most popular dishes, busiest hours, city-wise restaurant comparison, and revenue contribution  
+- 💹 **Operational Insights** – Customer retention, demand forecasting, restaurant growth ratio, and order-to-delivery cycle analysis  
+
+---
+
+## 🔹 Learning Outcomes  
+
+By completing this project, you will:  
+- Understand how to **design normalized relational databases** for real-world systems like food delivery apps  
+- Apply **advanced SQL techniques** such as CTEs, Window Functions, Joins, and Aggregations  
+- Analyze **business KPIs** including order trends, customer value, and restaurant growth  
+- Develop skills to **transform transactional data into actionable insights**  
+- Strengthen your understanding of **data analytics and performance reporting using SQL**
+
+---
+
+## 🔹 Conclusion  
+
+This project demonstrates how **SQL powers data-driven decision-making** in a modern food delivery ecosystem like Zomato or Swiggy.  
+It covers every step — from data modeling and relational design to **insightful analytics on customers, restaurants, riders, and revenue**.  
+
+By exploring 20 real-world analytical queries, this project bridges the gap between **theory and business application**, making it an excellent addition to your **data analytics or database portfolio**.  
+
+> 🚀 A complete hands-on SQL project designed to build strong analytical thinking, real-world query writing, and end-to-end database problem-solving skills.
